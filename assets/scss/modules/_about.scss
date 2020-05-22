@@ -1,0 +1,71 @@
+.about {
+  .flex-container {
+    @include flex-display;
+    padding: 120px 0;
+
+    .welcome {
+      width: 50%;
+
+      h3 {
+        padding-left: 24px;
+        font-size: $font-xlarge;
+        font-weight: $font-bold;
+      }
+
+      .bottom--underline { margin-left: 24px; }
+
+      p {
+        padding: 24px;
+        line-height: 1.4;
+
+        &:nth-of-type(2) { padding-top: 0; }
+      }
+
+      .service-link {
+        margin-top: 30px;
+        margin-left: 24px;
+
+        a {
+          padding: 14px 17px;
+          background-color: $secondary-color;
+          border-radius: 5px;
+          color: $white;
+          font-size: $font-medium;
+          text-transform: uppercase;
+
+          &:hover {
+            margin: -2px;
+            background-color: $white;
+            border: 2px solid $secondary-color;
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+
+    .care {
+      width: 25%;
+
+      figure {
+        padding-left: 16px;
+
+        img {
+          &:hover { @include box-shadow; }
+        }
+
+        figcaption {
+          padding-top: 24px;
+          font-size: $font-medium-large;
+          font-weight: $font-bold;
+
+          p {
+            padding-top: 16px;
+            font-size: $font-small-large;
+            font-weight: $font-normal;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.banner {
+  position: relative;
+  background-image: url('https://via.placeholder.com/1440x770/656565?text=BG');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  height: 770px;
+  text-align: center;
+
+  .content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h2 {
+      margin-top: 124px;
+      font-size: $font-xxlarge;
+      font-weight: $font-bold;
+      text-transform: uppercase;
+    }
+
+    p {
+      width: 50%;
+      margin: 0 auto;
+      padding: 16px 0 36px 0;
+      font-size: $font-large-small;
+      line-height: 1.5;
+    }
+
+    a {
+      padding: 16px 20px;
+      background-color: $secondary-color;
+      border-radius: 5px;
+      color: $white;
+      font-size: $font-medium;
+      text-transform: uppercase;
+
+      &:hover {
+        margin: -2px;
+        background-color: transparent;
+        border: 2px solid $white
+      }
+    }
+  }
+}

@@ -102,27 +102,27 @@ form {
   background-color: $primary-color;
   color: $lightwhite;
   text-align: center;
-}
 
-.social-icons {
-  a {
-    padding: 16px 12px 44px 12px;
-    color: $lightwhite;
-
-    &:hover { color: $white; }
-    .fab { color: $secondary-color; }
-    .fa-stack { font-size: $font-medium-large; }
+  .social-icons {
+    a {
+      padding: 16px 12px 44px 12px;
+      color: $lightwhite;
+  
+      &:hover { color: $white; }
+      .fab { color: $secondary-color; }
+      .fa-stack { font-size: $font-medium-large; }
+    }
   }
-}
-
-.copyright {
-  p {
-    padding: 8px;
-    font-size: $font-small;
-  }
-
-  a {
-    color: $secondary-color;
-    &:hover { color: $white; }
+  
+  .copyright {
+    p {
+      padding: 8px;
+      font-size: $font-small;
+    }
+  
+    a {
+      color: $secondary-color;
+      &:hover { color: $white; }
+    }
   }
 }
