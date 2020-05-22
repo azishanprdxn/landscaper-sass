@@ -126,3 +126,57 @@ form {
     }
   }
 }
+
+/*media query for 1100px starts here*/
+@media only screen and (max-width: 1100px) {
+  .contact__form {
+    padding: 100px;
+
+    .flex-container {
+      .contact-info { width: 50%; }
+      h4 { padding-top: 12px; }
+    }
+  }
+}
+
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+  form {
+    .form-flex {
+      input { width: 74%; }
+      textarea { width: 87%; }
+    }
+  }
+}
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  .contact__form {
+    padding: 100px 24px;
+
+    .flex-container {
+      .contact-info { width: 100%; }
+    }
+  }
+
+  form {
+    .form-flex {
+      .user-name { width: 100%; }
+      .user-email { width: 100%; }
+      input { width: 100%; }
+      textarea { width: 100%; }
+    }
+  }
+}
+
+/*media query for 425px starts here*/
+@media only screen and (max-width: 425px) {
+  .contact__form { padding: 100px 0; }
+
+  form {
+    .form-flex {
+      input { padding: 9px 0 9px 18px; }
+      textarea { padding: 9px 0 9px 18px; }
+    }
+  }
+}

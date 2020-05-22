@@ -69,3 +69,25 @@
     }
   }
 }
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  .about {
+    .flex-container {
+      .welcome { width: 100%; }
+      .care {
+        width: 50%;
+        padding-top: 50px;
+      }
+    }
+  }
+}
+
+/*media query for 425px starts here*/
+@media only screen and (max-width: 425px) {
+  .about {
+    .flex-container {
+      .care { width: 100%; }
+    }
+  }
+}

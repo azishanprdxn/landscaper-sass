@@ -52,3 +52,29 @@
     }
   }
 }
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  .gallery {
+    .inner {
+      ul {
+        li { padding: 6px 0; }
+      }
+      
+      .flex-container {
+        .projects { width: 50%; }
+      }
+    }
+  }
+}
+
+/*media query for 425px starts here*/
+@media only screen and (max-width: 425px) {
+  .gallery {
+    .inner {
+      .flex-container {
+        .projects { width: 100%; }
+      }
+    }
+  }
+}

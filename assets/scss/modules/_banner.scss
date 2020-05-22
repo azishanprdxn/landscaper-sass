@@ -46,3 +46,23 @@
     }
   }
 }
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  .banner {
+    .content {
+      width: 95%;
+      p { width: 100% }
+    }
+  }
+}
+
+/*media query for 425px starts here*/
+@media only screen and (max-width: 425px) {
+  .banner {
+    .content {
+      width: 100%;
+      h2 { font-size: $font-xlarge; }
+    }
+  }
+}
