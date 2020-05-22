@@ -1,0 +1,46 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: $primary-color;
+  z-index: 1;
+
+  a { color: $white; }
+
+  .flex-container {
+    @include flex-display;
+    position: relative;
+
+    .logo {
+      width: 25%;
+
+      h1 {
+        padding: 30px 26px;
+        font-size: $font-large;
+      }
+    }
+
+    nav {
+      width: 75%;
+
+      ul {
+        padding: 40px 34px 0 0;
+        font-size: $font-small;
+        text-align: right;
+        text-transform: uppercase;
+
+        li {
+          padding-left: 40px;
+
+          a {
+            &:hover {
+              padding: 8px 12px;
+              border: 2px solid white;
+              border-radius: 4px;
+              margin: -10px -14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

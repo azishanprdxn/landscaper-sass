@@ -1,0 +1,31 @@
+@import './modules/reset';
+@import './variables';
+@import './mixins';
+@import './placeholder';
+
+/* for container */
+.container {
+  background-color: $white;
+  color: $primary-color;
+}
+
+/* for wrapper */
+.wrapper {
+  max-width: 1440px;
+  width: 88%;
+  margin: 0 auto;
+}
+
+.text--green { color: $secondary-color; }
+
+.bottom--underline {
+  width: 70px;
+  height: 3px;
+  display: inline-block;
+  margin: 18px 0;
+  background-color: $secondary-color;
+}
+
+@import './modules/header';
+@import './modules/main';
+@import './modules/footer';

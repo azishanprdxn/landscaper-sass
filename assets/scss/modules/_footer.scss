@@ -1,0 +1,128 @@
+/* contact section */
+.contact {
+  p { font-size: $font-medium; }
+}
+
+.contact__form {
+  padding: 100px 136px;
+  text-align: center;
+
+  h3 { font-size: $font-xlarge; }
+
+  h4 {
+    font-weight: $font-bold;
+    text-transform: uppercase;
+  }
+
+  .flex-container {
+    @include flex-display(100%, center);
+    padding: 90px 0 0 0;
+
+    .contact-info {
+      width: 33.33%;
+
+      .bottom--underline {
+        margin-top: 10px;
+        margin-bottom: 14px;
+        background-color: $lightgrey;
+      }
+
+      p {
+        padding-bottom: 10px;
+        font-size: $font-small;
+        line-height: 1.5;
+      }
+
+      a {
+        color: $primary-color;
+        &:hover { text-decoration: underline; }
+      }
+    }
+  }
+}
+
+form {
+  h4 { padding: 80px 0 40px 0; }
+
+  .form-flex {
+    @include flex-display(80%, start);
+
+    input {
+      width: 81%;
+      margin: 0 0 16px 0;
+      padding: 9px 18px;
+      border: 1px solid $lightgrey;
+      font-size: $font-medium-small;
+      outline: none;
+
+      &:focus {
+        border: 1px solid $secondary-color;
+      }
+    }
+
+    textarea {
+      width: 91%;
+      margin: 0 0 16px 0;
+      padding: 20px 18px 28px 18px;
+      border: 1px solid $lightgrey;
+      font-size: $font-medium-small;
+      outline: none;
+
+      &:focus {
+        border: 1px solid $secondary-color;
+      }
+    }
+
+    .user-name { width: 50%; }
+    .user-email { width: 50%; }
+    .user-message { width: 100%; }
+    .send-button { width: 100%; }
+
+    a {
+      padding: 14px 17px;
+      background-color: $secondary-color;
+      border-radius: 5px;
+      color: $white;
+      font-size: $font-medium;
+      text-transform: uppercase;
+
+      &:hover {
+        margin: -2px;
+        background-color: $white;
+        border: 2px solid $secondary-color;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+/* social and copyright section */
+.dark-bg {
+  padding: 24px;
+  background-color: $primary-color;
+  color: $lightwhite;
+  text-align: center;
+}
+
+.social-icons {
+  a {
+    padding: 16px 12px 44px 12px;
+    color: $lightwhite;
+
+    &:hover { color: $white; }
+    .fab { color: $secondary-color; }
+    .fa-stack { font-size: $font-medium-large; }
+  }
+}
+
+.copyright {
+  p {
+    padding: 8px;
+    font-size: $font-small;
+  }
+
+  a {
+    color: $secondary-color;
+    &:hover { color: $white; }
+  }
+}
