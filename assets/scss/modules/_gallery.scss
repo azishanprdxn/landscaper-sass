@@ -1,0 +1,54 @@
+.gallery {
+  .inner {
+    padding: 100px 0;
+    text-align: center;
+
+    h3 { font-size: $font-xlarge; }
+    p { font-size: $font-medium; }
+
+    ul {
+      padding: 63px 0 56px 0;
+
+      li {
+        margin: 0 10px;
+
+        a {
+          padding: 10px 16px;
+          background-color: $lightgrey;
+          border-radius: 5px;
+          color: $primary-color;
+          text-transform: uppercase;
+
+          &:hover {
+            &:not(.active) {
+              margin: -2px;
+              background-color: $white;
+              border: 2px solid $secondary-color;
+            }
+          }
+        }
+
+        a.active {
+          background-color: $secondary-color;
+          color: $white;
+        }
+      }
+    }
+
+    .flex-container {
+      @include flex-display(100%, center);
+
+      .projects {
+        width: 33.33%;
+      
+        figure {
+          padding: 0 10px 32px 10px;
+      
+          img {
+            &:hover { @include box-shadow; }
+          }
+        }
+      }
+    }
+  }
+}

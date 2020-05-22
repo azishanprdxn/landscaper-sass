@@ -1,0 +1,44 @@
+.services {
+  background-color: $secondary-color;
+  color: $white;
+  text-align: center;
+
+  p { font-size: $font-medium; }
+
+  .inner {
+    padding: 120px 0;
+
+    h3 { font-size: $font-xlarge; }
+    .bottom--underline { background-color: $white; }
+
+    .flex-container {
+      @include flex-display (100%, center);
+      padding-top: 100px;
+
+      .features {
+        width: 25%;
+
+        img {
+          @include box-shadow;
+          width: 100%;
+          margin: -12px;
+          border: 12px solid $secondary-color;
+          border-radius: 50%;
+
+          &:hover { border: 12px solid $lightgrey; }
+        }
+
+        figcaption {
+          padding-top: 32px;
+          font-size: $font-large-small;
+
+          p {
+            padding: 12px 0 38px 0;
+            font-size: $font-small-large;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+}

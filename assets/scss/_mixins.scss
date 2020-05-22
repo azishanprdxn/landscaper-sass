@@ -10,3 +10,8 @@
   -ms-flex-pack: $align;
   justify-content: $align;
 }
+
+@mixin box-shadow($x: 0, $y: 0, $blur: 4px, $color: $primary-color) {
+  -webkit-box-shadow: 0 0 4px $color;
+  box-shadow: 0 0 4px $color;
+}
